@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#3F51B5"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/tempicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:src="@drawable/org3wna" />
+
+        <TextView
+            android:id="@+id/daytemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tempicon"
+            android:layout_alignLeft="@+id/nowtemp"
+            android:text="13℃~20℃"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/nowtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tempicon"
+            android:layout_marginLeft="43dp"
+            android:layout_toRightOf="@+id/tempicon"
+            android:text="26℃"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#AfFFFFFF"
+            android:textSize="56sp" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nowtemp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/refresh" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="北京"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/aqitoday" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignBaseline="@+id/location" -->
+<!--             android:layout_alignBottom="@+id/location" -->
+<!--             android:layout_alignLeft="@+id/daytemp" -->
+<!--             android:text="Aqi:" -->
+<!--             android:textColor="#FFFFFF" -->
+<!--             android:textSize="24sp" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/aqidate" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignBaseline="@+id/aqitoday" -->
+<!--             android:layout_alignBottom="@+id/aqitoday" -->
+<!--             android:layout_alignRight="@+id/daytemp" -->
+<!--             android:layout_marginRight="13dp" -->
+<!--             android:text="60" -->
+<!--             android:textColor="#FFFFFF" -->
+<!--             android:textSize="24sp" /> -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:stretchMode="spacingWidthUniform" >
+
+        </GridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+
+        <LinearLayout 
+           
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:orientation="vertical">
+            <include layout="@layout/nowactivity"/>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+            <include layout="@layout/todayinfo"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

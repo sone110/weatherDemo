@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sampleweather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="airinfo">气象条件对空气污染物稀释、扩散和清除无明显影响，易感人群应适当减少室外活动时间。</string>
+    <string name="air">中</string>
+    <string name="comfinfo">白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。</string>
+    <string name="comf">舒适</string>
+    <string name="cwinfo">较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。</string>
+    <string name="cw">较适宜</string>
+    <string name="drsginfo">建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。</string>
+    <string name="drsg">较舒适</string>
+    <string name="fluinfo">天凉，昼夜温差较大，较易发生感冒，请适当增减衣服，体质较弱的朋友请注意适当防护。</string>
+    <string name="flu">较易发</string>
+    <string name="sportinfo">天气较好，较适宜进行各种运动，但因湿度偏高，请适当降低运动强度。</string>
+    <string name="sport">较适宜</string>
+    <string name="travinfo">天气较好，温度适宜，是个好天气哦。这样的天气适宜旅游，您可以尽情地享受大自然的风光。</string>
+    <string name="trav">适宜</string>
+    <string name="uvinfo">属中等强度紫外线辐射天气，外出时建议涂擦SPF高于15、PA+的防晒护肤品，戴帽子、太阳镜。</string>
+    <string name="uv">中等</string>
+    
+
+</resources>

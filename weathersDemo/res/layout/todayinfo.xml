@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" 
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/sensor_aqi"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:text="空气指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/aqiinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView2"
+            android:text="@string/airinfo"
+            android:textSize="@dimen/infosize"
+            android:textColor="@color/infocolor"/>
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="@string/air"
+            android:textSize="@dimen/zhishusize" 
+            android:textColor="@color/zhishucolor"/>
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/car_washing"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:text="洗车指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/cwinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView3"
+            android:text="@string/cwinfo"
+            android:textSize="@dimen/infosize" 
+            android:textColor="@color/infocolor" />
+
+        <TextView
+            android:id="@+id/cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="@string/cw"
+            android:textSize="@dimen/zhishusize" 
+            android:textColor="@color/zhishucolor"/>
+
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_marginLeft="10dp"
+            android:text="穿衣指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/drsginfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView4"
+            android:text="@string/drsginfo"
+            android:textSize="@dimen/infosize"  
+            android:textColor="@color/infocolor"/>
+
+        <TextView
+            android:id="@+id/drsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="@string/drsg"
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/yizhuo" />
+
+    </RelativeLayout>
+     
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/sport"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:layout_marginLeft="10dp"
+            android:text="运动指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/sportinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView5"
+            android:text="@string/sportinfo"
+            android:textSize="@dimen/infosize" 
+            android:textColor="@color/infocolor"/>
+
+        <TextView
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="@string/sport"
+            android:textSize="@dimen/zhishusize" 
+            android:textColor="@color/zhishucolor"/>
+      </RelativeLayout>
+     
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/luxing"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_marginLeft="10dp"
+            android:text="旅行指数："
+            android:textSize="@dimen/zhishusize" 
+            android:textColor="@color/zhishucolor"/>
+
+        <TextView
+            android:id="@+id/travlinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView6"
+            android:text="@string/travinfo"
+            android:textSize="@dimen/infosize"  
+            android:textColor="@color/infocolor"/>
+
+        <TextView
+            android:id="@+id/travl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="@string/trav"
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+      </RelativeLayout>
+     
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/uv"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginLeft="10dp"
+            android:text="防晒指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/uvinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView8"
+            android:text="@string/uvinfo"
+            android:textSize="@dimen/infosize"
+            android:textColor="@color/infocolor" />
+
+        <TextView
+            android:id="@+id/uv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toRightOf="@+id/textView8"
+            android:text="@string/uv"
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+    </RelativeLayout>
+           <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/ganmao"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_marginLeft="10dp"
+            android:text="感冒指数："
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+        <TextView
+            android:id="@+id/ganmaoinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView9"
+            android:text="@string/fluinfo"
+            android:textSize="@dimen/infosize"
+            android:textColor="@color/infocolor"  />
+
+        <TextView
+            android:id="@+id/ganmao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:text="@string/flu"
+            android:textSize="@dimen/zhishusize"
+            android:textColor="@color/zhishucolor" />
+
+    </RelativeLayout>
+
+</LinearLayout>

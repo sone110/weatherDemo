@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/activity_searchbox" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" >
+
+        <RelativeLayout
+            android:id="@+id/city_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <za.co.immedia.pinnedheaderlistview.PinnedHeaderListView
+                android:id="@+id/pinnedListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                 >
+            </za.co.immedia.pinnedheaderlistview.PinnedHeaderListView>
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                
+                android:layout_centerInParent="true" />
+             <com.example.sampleweather.Slider
+                android:id="@+id/slider"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+         
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/search_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+          >
+
+            <ListView
+                android:id="@+id/searchcitylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                
+                android:focusableInTouchMode="true"
+                android:visibility="gone" >
+            </ListView>
+
+            
+
+           
+
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>
