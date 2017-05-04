@@ -8,69 +8,72 @@
     <TextView
         android:id="@+id/shidu"
         style="@style/nowdate"
-        android:layout_alignBaseline="@+id/textView6"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_toRightOf="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="45dp"
         android:text="31%" />
-
-    <TextView
-        android:id="@+id/tianqileixing"
-        style="@style/nowdate"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="晴" />
-
-    <TextView
-        android:id="@+id/fengxiang"
-        style="@style/nowdate"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView4"
-        android:text="东南风" />
-
-    <TextView
-        android:id="@+id/fengli"
-        style="@style/nowdate"
-        android:layout_above="@+id/textView3"
-        android:layout_alignLeft="@+id/tianqileixing"
-        android:text="4-5" />
-
-    <TextView
-        android:id="@+id/textView3"
-        style="@style/nowdate"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_below="@+id/textView5"
-        android:text="能见度：" />
-
-    <TextView
-        android:id="@+id/nengjiandu"
-        style="@style/nowdate"
-        android:layout_below="@+id/fengli"
-        android:layout_toRightOf="@+id/textView3"
-        android:text="10KM" />
-
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/nowdate"
-        android:layout_alignBaseline="@+id/nengjiandu"
-        android:layout_alignBottom="@+id/nengjiandu"
-        android:layout_alignLeft="@+id/textView6"
-        android:text="降水量：" />
-
-    <TextView
-        android:id="@+id/jiangshui"
-        style="@style/nowdate"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:text="100mm" />
 
     <TextView
         android:id="@+id/textView4"
         style="@style/nowdate"
-        android:layout_above="@+id/textView6"
-        android:layout_alignLeft="@+id/textView6"
+        android:layout_above="@+id/shidu"
+ 
+        android:layout_toLeftOf="@+id/shidu"
         android:text="风向：" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/nowdate"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView5"
+        android:text="降水：" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/nowdate"
+        android:layout_alignBaseline="@+id/shidu"
+        android:layout_alignBottom="@+id/shidu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="风力：" />
+
+    <TextView
+        android:id="@+id/nengjiandu"
+        style="@style/nowdate"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="10KM" />
+
+    <TextView
+        android:id="@+id/jiangshui"
+        style="@style/nowdate"
+        android:layout_alignLeft="@+id/fengxiang"
+        android:layout_below="@+id/shidu"
+        android:text="100mm" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/nowdate"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView5"
+        android:text="能见度：" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/nowdate"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="湿度：" />
+
+    <TextView
+        android:id="@+id/fengxiang"
+        style="@style/nowdate"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/shidu"
+        android:text="东南风" />
 
     <TextView
         android:id="@+id/textView1"
@@ -80,19 +83,17 @@
         android:text="天气：" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tianqileixing"
         style="@style/nowdate"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/fengxiang"
-        android:layout_marginLeft="37dp"
-        android:text="风力：" />
+        android:layout_above="@+id/fengli"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="晴" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/fengli"
         style="@style/nowdate"
-        android:layout_below="@+id/fengxiang"
-        android:layout_marginLeft="70dp"
-        android:layout_toRightOf="@+id/nengjiandu"
-        android:text="湿度：" />
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="4-5" />
 
 </RelativeLayout>

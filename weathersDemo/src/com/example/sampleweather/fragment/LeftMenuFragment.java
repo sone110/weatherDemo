@@ -5,6 +5,9 @@ import com.example.sampleweather.CityManergerActivity;
 import com.example.sampleweather.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,7 +18,7 @@ public class LeftMenuFragment extends BaseFragment implements OnClickListener {
 
 	private Button mCityManerger;
 	private Button mAbout;
-	private Button mSetting;
+	private Button mVersion;
 	private Application mApplication ; 
 	private SlidingMenu slidingMenu;
 
@@ -25,7 +28,7 @@ public class LeftMenuFragment extends BaseFragment implements OnClickListener {
 		View view = View.inflate(mActivity, R.layout.fragmentleftenu_activity, null);
 		mCityManerger = (Button) view.findViewById(R.id.menubutton);
 		mAbout = (Button) view.findViewById(R.id.menubutton1);
-		mSetting =(Button) view.findViewById(R.id.menubutton2);
+		mVersion =(Button) view.findViewById(R.id.menubutton2);
 		return view;
 	}
 
@@ -36,7 +39,7 @@ public class LeftMenuFragment extends BaseFragment implements OnClickListener {
 	  slidingMenu = mApplication.getSlidingMenu();
       mCityManerger.setOnClickListener(this);
       mAbout.setOnClickListener(this);
-      mSetting.setOnClickListener(this);
+      mVersion.setOnClickListener(this);
 	}
 
 	@Override
@@ -48,7 +51,32 @@ public class LeftMenuFragment extends BaseFragment implements OnClickListener {
 			startActivity(intent);
 //			slidingMenu.toggle();
 			break;
-
+		case R.id.menubutton1: 
+			new AlertDialog.Builder(mActivity)
+            .setTitle("关于")
+            .setMessage("这个APP是学习过程中写的第一个整体APP，有bug请见谅。")
+            .setPositiveButton("确定",new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+//						finish();
+					}
+				} ).show();
+			break;
+		case R.id.menubutton2: 
+			new AlertDialog.Builder(mActivity)
+            .setTitle("版本")
+            .setMessage("V1.0")
+            .setPositiveButton("确定",new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+//						finish();
+					}
+				} ).show();
+			break;
 		default:
 			break;
 		}

@@ -277,8 +277,11 @@ public class WeatherView extends BasePage  {
 	            Map<String, Object> map = new HashMap<String, Object>();
 	            map.put("weekendText", newString.NewString(info.date.toString())+"日");
 	            Integer typeImageId = mTypeIcon.get(info.type);
+//	           System.out.println(typeImageId); 
+//	            System.out.println(info.type.toString());
 	            if(typeImageId != null) {
 	                map.put("weekendImage", typeImageId);//info.getType()
+	                
 	            }else{
 	                map.put("weekendImage", R.drawable.ww0);
 	            }
@@ -311,7 +314,7 @@ public class WeatherView extends BasePage  {
 		        map.put("阵雪",R.drawable.ww5);
 		        map.put("中雪",R.drawable.ww15);
 
-		        return map;
+		       return map;
 			
 		}
 //		绑定小图标
@@ -364,49 +367,6 @@ public class WeatherView extends BasePage  {
 	        mGridView.setSelector(new  ColorDrawable(Color.TRANSPARENT));
 	        mGridView.setNumColumns(size);//总长度
 	    }
-
-		
-		class Adapter extends BaseAdapter{
-
-			@Override
-			public int getCount() {
-				// TODO Auto-generated method stub
-				return a.length;
-			}
-
-			@Override
-			public Object getItem(int position) {
-				// TODO Auto-generated method stub
-				return position;
-			}
-
-			@Override
-			public long getItemId(int position) {
-				// TODO Auto-generated method stub
-				return position;
-			}
-
-			@Override
-			public View getView(int position, View convertView, ViewGroup parent) {
-				// TODO Auto-generated method stub
-				View view = View.inflate(mActivity, android.R.layout.simple_list_item_1,null);
-				TextView tv = (TextView) view.findViewById(android.R.id.text1);
-				tv.setText(a[position]);
-				
-				return view ;
-			}
-			
-		
-			
-			
-		}
-
-
-	
-
-
-
-
 
 
 }
