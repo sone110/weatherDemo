@@ -39,6 +39,7 @@
             android:value="ab3a1a937eba1d9d6eb9141d441ba934" />
         <activity
             android:name=".WelcomeActivity"
+            
             android:windowSoftInputMode="adjustPan|stateHidden"
             android:label="@string/app_name" >
             <intent-filter>
@@ -49,6 +50,7 @@
         </activity>
         <activity 
             android:name=".MainActivity"
+          
             android:label="@string/app_name" ></activity>
         <activity 
             android:name=".CityManergerActivity"

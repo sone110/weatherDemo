@@ -1,4 +1,7 @@
-package com.example.sampleweather;
+package com.example.sampleweather.ui;
+
+import com.example.sampleweather.R;
+import com.example.sampleweather.R.drawable;
 
 import android.R.integer;
 import android.content.Context;

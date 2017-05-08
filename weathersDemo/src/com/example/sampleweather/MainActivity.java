@@ -34,16 +34,17 @@ public class MainActivity extends SlidingFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+//		无标题栏
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		// 设置侧边栏
-
+//获取侧边栏对象
 		mApplication = Application.getInstance();
 		setBehindContentView(R.layout.leftmenu);
 		slidingMenu = getSlidingMenu();
 		mApplication.setSlidingMenu(slidingMenu);
 		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
-		slidingMenu.setBehindOffset(100);
+		slidingMenu.setBehindOffset(150);
 		initFragment();
 		// Intent intent = getIntent();
 		// position = Integer.parseInt(intent.getStringExtra("page"));
@@ -52,15 +53,17 @@ public class MainActivity extends SlidingFragmentActivity {
 
 	private void initFragment() {
 		// TODO Auto-generated method stub
+//		获取fragmentManager 对象
 		FragmentManager fragmentManager = getSupportFragmentManager();
+//		开启fragment 事务
 		FragmentTransaction fragmentTransaction = fragmentManager
 				.beginTransaction();
-
+//替换布局
 		fragmentTransaction.replace(R.id.activity_main,
 				new ContentViewFragment(position), TAG_MAIN_VIEW);
 		fragmentTransaction.replace(R.id.leftmenu, new LeftMenuFragment(),
 				TAG_LEFT_MENU);
-
+//提交事务
 		fragmentTransaction.commit();
 	}
 
@@ -76,6 +79,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
 	protected void onRestart() {
 		super.onRestart();
+//		比较时间，是否需要重新加载数据
 		mApplication.comparetime();
 		int time = (int) mApplication.getMinute();
 		System.out.println("OnRestart"+ time);
@@ -87,6 +91,7 @@ public class MainActivity extends SlidingFragmentActivity {
 		Intent localIntent = getIntent();
 		System.out.println("intent.getStringExtra "
 				+ localIntent.getStringExtra("page"));
+//		城市选择页面点击城市跳转携带第几页参数，initFragment
 		if (localIntent.getStringExtra("page") != null) {
 			this.position = Integer.valueOf(localIntent.getStringExtra("page"))
 					.intValue();
@@ -101,6 +106,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
 	protected void onStop() {
 		super.onStop();
+//		写入Stop的时间
 		long l = System.currentTimeMillis();
 		String str = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 				.format(new Date(l));

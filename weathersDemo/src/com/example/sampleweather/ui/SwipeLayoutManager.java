@@ -18,6 +18,9 @@ public class SwipeLayoutManager {
 	public void setCurrentDelete(SwipeDelete currentDelete) {
 		this.currentDelete = currentDelete;
 	}
+	public SwipeDelete getCurrentDelete() {
+		return currentDelete;
+	}
 	
 	
 	/**

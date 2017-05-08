@@ -38,7 +38,7 @@
                 android:textSize="30.0dip"
                 
                 android:layout_centerInParent="true" />
-             <com.example.sampleweather.Slider
+             <com.example.sampleweather.ui.Slider
                 android:id="@+id/slider"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"

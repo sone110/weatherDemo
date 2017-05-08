@@ -53,15 +53,16 @@ public class MyScrollView extends ScrollView {
             case MotionEvent.ACTION_MOVE:
                 final float deltaX = Math.abs(x - mDownPosX);
                 final float deltaY = Math.abs(y - mDownPosY);
-                // 这里是够拦截的判断依据是左右滑动，读者可根据自己的逻辑进行是否拦截
+                // 这里是够拦截的判断依据是左右滑动距离比较
                 if (deltaX > deltaY) {
-                	System.out.println("1231233211");
+//                	System.out.println("1231233211");
+//                	
                     return false;
                 }
                
         }
 
-        System.out.println("66666");
+//        System.out.println("66666");
         return super.onInterceptTouchEvent(ev);
     }
 }

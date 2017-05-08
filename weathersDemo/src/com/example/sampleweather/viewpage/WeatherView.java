@@ -64,7 +64,6 @@ public class WeatherView extends BasePage  {
 	private MyGridViewAdapter mGridviewAdapter;
 	private NewString newString= new NewString();
 	private Datas mHeWeather ; 
-	private String [] a =  new String[]{"a","b","c","d","e","f"};
 	private String city;
 	private String url;
 	private String url1;
@@ -87,10 +86,8 @@ public class WeatherView extends BasePage  {
 		  url = GlobleData.URL+ string;
 		  url1 = GlobleData.SUGEESTION + string +GlobleData.KEY;
 		  gson = new GsonBuilder().serializeNulls().create();
-		  LogUtils.i(url);
+//		  LogUtils.i(url);
 		  updateDatas();
-//         getDatafrom(url , DATA_1);
-//         getDatafrom(url1, DATA_2);
 		  mRefresh.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -214,7 +211,11 @@ public class WeatherView extends BasePage  {
 		
 	}
 
-
+/*
+ * 
+ * Xutils请求网络
+ * 
+ * */
 
 	public  void  getDatafrom(final String string  ,final int i){
 		HttpUtils httpUtils = new HttpUtils();
